@@ -25,7 +25,7 @@ int main()
         int Arr_1[x];
         int Arr_Result[x];
 
-        printf("\n\nEnter your Elements");
+        printf("\n\nEnter your Elements\n\n");
         for (int i = 0; i < x; i++)
             {
                 printf("Arr_0[%d]: ",i);
