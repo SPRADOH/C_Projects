@@ -22,6 +22,7 @@ void insertion(int x, int arr[])
 {
     int key;
     char sort_type;
+    int run;
 
     printf("Which sorting operation do you want to carry out?\nEnter 'A' or 'a' for Ascending and 'D' or 'd' for Descending: ");
     scanf(" %c",&sort_type);
@@ -51,8 +52,17 @@ void insertion(int x, int arr[])
             }
         }
 
-        
+        else
+        {
+            run=1;
+        }
+            
     }
+    if (run==1)
+    {
+        insertion(x,arr);
+    }
+    
     
 }
 
@@ -66,12 +76,12 @@ int main()
     int arr[x];
 
     getMembers(x,arr);
-    printf("Unsorted array:\t");
+    printf("\nUnsorted array:\t");
     printArray(x,arr);
     printf("\n\n");
 
     insertion(x,arr);
-    printf("Sorted array:\t");
+    printf("\nSorted array:\t");
     printArray(x,arr);
 
     return 0;
