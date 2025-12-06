@@ -29,7 +29,7 @@ void insertion(int x, int arr[])
     for (int i = 1; i < x; i++)
     {
         key=arr[i];
-        int j = j-1;
+        int j = i-1;
 
         if (sort_type=='a'||sort_type=='A')
         {
@@ -46,7 +46,7 @@ void insertion(int x, int arr[])
             while (j>=0 && arr[j]<key)
             {
                 arr[j+1]=arr[j];
-                j=i-1;
+                j=j-1;
                 arr[j+1]=key;
             }
         }
