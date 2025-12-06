@@ -84,4 +84,5 @@ int main()
     printArray(x,arr);
 
 
+    return 0;
 }
